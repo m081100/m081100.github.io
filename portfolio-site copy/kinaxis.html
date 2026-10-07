@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- DRAFT: remove the next line only after Kinaxis has reviewed this page (15-day notice) -->
+<meta name="robots" content="noindex">
+<title>Aegis — Case Study — May Elbanna</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html" class="name">May Elbanna</a>
+  <div class="links">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="work.html" class="nav-link active">Work</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+</nav>
+
+<main class="case">
+  <a class="back-link" href="work.html">← All work</a>
+  <h1>Aegis: designing governed access to AI at work</h1>
+  <p class="lede">A role-based platform that lets employees use agentic AI tools while giving administrators and compliance teams control over who can do what. I was the sole UX designer on a six-person team.</p>
+
+  <dl class="meta">
+    <div><dt>Client</dt><dd>Kinaxis (sponsored academic project)</dd></div>
+    <div><dt>My role</dt><dd>UX designer (sole designer)</dd></div>
+    <div><dt>Team</dt><dd>3 developers, 1 business analyst, 1 project manager</dd></div>
+    <div><dt>Timeline</dt><dd><span class="todo">[e.g. Jan – Apr 2026]</span></dd></div>
+    <div><dt>Tools</dt><dd>Figma</dd></div>
+    <div><dt>Deliverables</dt><dd>High-fidelity prototype screens, presented at Design Day</dd></div>
+  </dl>
+
+  <h2>The problem</h2>
+  <p>Companies want their employees to use AI agents, but most can't easily govern, prove or control what those agents do. Kinaxis wanted employees to benefit from AI with access that is role-based, governed and auditable.</p>
+  <p>That meant designing for people with very different needs: an employee who just wants to ask a question, an administrator who sets the rules, and a compliance or security reviewer who needs to trust what happened.</p>
+
+  <h2>Who I designed for</h2>
+  <p>The team's brief identified several stakeholder groups. I organised the interface around three roles:</p>
+  <ul>
+    <li><strong>Everyday users</strong> who need quick, clear answers from an AI assistant.</li>
+    <li><strong>Administrators</strong> who manage policies, settings and spend.</li>
+    <li><strong>Oversight roles</strong> (security, compliance) who review activity and decisions.</li>
+  </ul>
+
+  <h2>How I worked</h2>
+  <p>This was my first UX project and I was the only designer, so I didn't inherit a ready-made process. I started by studying products people already know, such as chat assistants and role-based admin dashboards, and used them to decide which patterns to borrow and which to change for a governed setting. From there I moved quickly into prototyping in Figma, and reviewed the work with the team and the client as it developed.</p>
+  <p><span class="todo">[May: add 2–3 sentences on any screens you revised after feedback, and what changed. If nothing was iterated, delete this line.]</span></p>
+
+  <h2>Key design decisions</h2>
+
+  <h3>1. A sign-in that explains who is in control</h3>
+  <p>Enterprise users expect to sign in with their company account, so the login offers work email, Microsoft and SSO. A short line, "Your access and permissions are managed by your organization", sets expectations early: what you can see depends on your role.</p>
+  <figure>
+    <img src="images/login.png" alt="Aegis sign-in screen with email, password, Microsoft and SSO options" loading="lazy">
+    <figcaption>Sign-in</figcaption>
+  </figure>
+
+  <h3>2. A home screen split by what you do</h3>
+  <p>The home screen separates <strong>Quick Access</strong> (AI assistant, dashboard, audit) from <strong>Administration</strong> (governance and policy, console, FinOps). Everyday users get to the assistant in one click, and administrative tools are grouped so they don't crowd the main tasks. This mirrors the roles above.</p>
+  <figure>
+    <img src="images/home.png" alt="Aegis home screen with Quick Access and Administration sections" loading="lazy">
+    <figcaption>Home: Quick Access and Administration</figcaption>
+  </figure>
+
+  <h3>3. A familiar chat experience</h3>
+  <p>For the assistant I followed the chat pattern people already know: conversation history on the left, the current conversation in the centre and a simple input at the bottom. Keeping it familiar lets users focus on their question rather than learning a new tool. A goal for governed responses was plain-language messages when something is not permitted, so a denial explains itself instead of leaving the user stuck.</p>
+  <figure>
+    <img src="images/chat.png" alt="Aegis AI assistant chat screen with conversation history" loading="lazy">
+    <figcaption>AI assistant</figcaption>
+  </figure>
+
+  <h3>4. A separate dashboard for administrators</h3>
+  <p>Administrators need a different view from everyday users. The dashboard leads with a few headline numbers, then activity over time and system status, with navigation for deeper admin areas on the left. Some details are blurred in this image for confidentiality.</p>
+  <figure>
+    <img src="images/dashboard.png" alt="Aegis admin dashboard with summary metrics and an activity chart" loading="lazy">
+    <figcaption>Admin dashboard (some details blurred)</figcaption>
+  </figure>
+
+  <h2>Outcome</h2>
+  <p>The design moved from an MVP to a beta to a final prototype through feedback loops with the client, and was demonstrated at Design Day. <span class="todo">[May: add anything the client or audience said about the design, if you have it.]</span></p>
+
+  <h2>What I learned, and what I'd do differently</h2>
+  <p>Being the only designer on my first project taught me how much a design process matters when you don't have one handed to you. If I did it again, I would:</p>
+  <ul>
+    <li>Ask the client direct questions early, including who the real users are and what a good outcome looks like, instead of waiting for feedback to come to me.</li>
+    <li>Talk to a few real employees before designing, and test the prototype with them.</li>
+    <li>Set up a regular design review with the developers so decisions are shared, not made in isolation.</li>
+    <li>Write down my design decisions as I go, so the reasoning is easy to explain later.</li>
+  </ul>
+</main>
+
+</body>
+</html>
